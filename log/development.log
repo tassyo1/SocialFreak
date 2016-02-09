@@ -1,0 +1,1955 @@
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:02:34 -0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/railties-4.2.5/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 36ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:11:25 -0200
+Processing by PagesController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template pages/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/tassyo1/Documentos/Projetos/Ruby/SocialFreak/app/views"
+):
+  actionview (4.2.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.5) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.5) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.5) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.5) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.2.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (31.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (36.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:12:36 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 4397ms (Views: 4396.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-21 01:12:40 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:13:28 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 45ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:27:02 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 237ms (Views: 229.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:27:05 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-21 01:27:07 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 16:47:36 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 518ms (Views: 509.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-23 16:47:37 -0200
+
+
+Started GET "/index.html" for 127.0.0.1 at 2015-11-23 17:16:09 -0200
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (35.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (34.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (68.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-23 17:16:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 17:17:03 -0200
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (99.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (140.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20151123201008)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_users_on_provider" ON "users" ("provider")
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_users_on_provider" ON "users" ("provider")
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "provider" varchar NOT NULL, "uid" varchar NOT NULL, "name" varchar, "location" varchar, "image_url" varchar, "url" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151123201008"]]
+  [1m[36m (99.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (74.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (165.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (0.4ms)[0m  CREATE  INDEX `index_users_on_provider`  ON `users` (`provider`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (0.4ms)[0m  CREATE  INDEX `index_users_on_provider`  ON `users` (`provider`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (104.3ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `provider` varchar(255) NOT NULL, `uid` varchar(255) NOT NULL, `name` varchar(255), `location` varchar(255), `image_url` varchar(255), `url` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151123201008')
+  [1m[36m (35.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'social_freak_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to AddIndexUser (20151123204704)
+  [1m[35m (117.1ms)[0m  CREATE  INDEX `index_users_on_provider`  ON `users` (`provider`) 
+  [1m[36m (107.8ms)[0m  [1mCREATE  INDEX `index_users_on_uid`  ON `users` (`uid`) [0m
+  [1m[35m (98.7ms)[0m  CREATE UNIQUE INDEX `index_users_on_provider_and_uid`  ON `users` (`provider`, `uid`) 
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151123204704')
+  [1m[36m (29.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.2ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'social_freak_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.1ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:25:49 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (59.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 477ms (Views: 468.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 20:25:49 -0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-23 20:25:50 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:25:54 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.0ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:25:55 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:29:59 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (13.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 242ms (Views: 233.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:30:02 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.2ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:30:02 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:30:21 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.9ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:30:22 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (13.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.3ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:32:06 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (14.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:32:07 -0200
+
+OAuth::Unauthorized (400 Bad Request):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/consumer.rb:136:in `get_request_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:28:in `request_phase'
+  omniauth-twitter (1.2.1) lib/omniauth/strategies/twitter.rb:61:in `request_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:215:in `request_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:183:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.8ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:34:35 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:34:36 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=uCVIHgAAAAAAi0_bAAABUTZ8Bac&oauth_verifier=9cdYcT458MDtfYr6gCB4Ng5pqZhB4Rmt" for 127.0.0.1 at 2015-11-23 20:34:50 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"uCVIHgAAAAAAi0_bAAABUTZ8Bac", "oauth_verifier"=>"9cdYcT458MDtfYr6gCB4Ng5pqZhB4Rmt", "provider"=>"twitter"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:34:52 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (8.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 225ms (Views: 223.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:41:10 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:41:11 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=Bts9LgAAAAAAi0_bAAABUTaCC8c&oauth_verifier=qXiURxY96Dg7uIWagyUXWTe5UBZWFyte" for 127.0.0.1 at 2015-11-23 20:41:13 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"Bts9LgAAAAAAi0_bAAABUTaCC8c", "oauth_verifier"=>"qXiURxY96Dg7uIWagyUXWTe5UBZWFyte", "provider"=>"twitter"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:41:15 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:41:19 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:41:20 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=4juF_AAAAAAAi0_bAAABUTaCMPA&oauth_verifier=nGfqzE7SKGSAB8oRAtyEyI6GzdFhK1cl" for 127.0.0.1 at 2015-11-23 20:41:22 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"4juF_AAAAAAAi0_bAAABUTaCMPA", "oauth_verifier"=>"nGfqzE7SKGSAB8oRAtyEyI6GzdFhK1cl", "provider"=>"twitter"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:41:29 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:43:50 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:43:51 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=AgMzkQAAAAAAi0_bAAABUTaEf1g&oauth_verifier=EP3cp3Q2Z0UCYJJZpfuUqlB3GOCwI9SC" for 127.0.0.1 at 2015-11-23 20:43:53 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"AgMzkQAAAAAAi0_bAAABUTaEf1g", "oauth_verifier"=>"EP3cp3Q2Z0UCYJJZpfuUqlB3GOCwI9SC", "provider"=>"twitter"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 20:43:55 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.1ms)
+  Rendered pages/index.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 65ms (Views: 63.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:45:13 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:45:14 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=nPgDJQAAAAAAi0_bAAABUTaFwic&oauth_verifier=q2HLDqCuKzWRHZEh1190z393VBBtBrev" for 127.0.0.1 at 2015-11-23 20:45:16 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"nPgDJQAAAAAAi0_bAAABUTaFwic", "oauth_verifier"=>"q2HLDqCuKzWRHZEh1190z393VBBtBrev", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `from_omniauth' for #<Class:0x007f2c7ba454f8>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.8ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:46:04 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:46:05 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=gF5rdgAAAAAAi0_bAAABUTaGiWc&oauth_verifier=0LeAybtO8t7UEMAlQIytN9eZB0RS5cXf" for 127.0.0.1 at 2015-11-23 20:46:07 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"gF5rdgAAAAAAi0_bAAABUTaGiWc", "oauth_verifier"=>"0LeAybtO8t7UEMAlQIytN9eZB0RS5cXf", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `from_omniauth' for #<Class:0x007f2c7b5a3990>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.8ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:47:41 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:47:42 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=Id8_OAAAAAAAi0_bAAABUTaIBRw&oauth_verifier=3cWTvR5RM1IIJCxGpke7PvieGMnuq5St" for 127.0.0.1 at 2015-11-23 20:47:44 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"Id8_OAAAAAAAi0_bAAABUTaIBRw", "oauth_verifier"=>"3cWTvR5RM1IIJCxGpke7PvieGMnuq5St", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `from_omniauth' for #<Class:0x007f2c799fc138>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (17.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.8ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:48:25 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 20:48:26 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=wtUxxwAAAAAAi0_bAAABUTaIsXs&oauth_verifier=muiuZs5eQHxoLcwZkNBEU8PAgrJYHcqa" for 127.0.0.1 at 2015-11-23 20:48:28 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"wtUxxwAAAAAAi0_bAAABUTaIsXs", "oauth_verifier"=>"muiuZs5eQHxoLcwZkNBEU8PAgrJYHcqa", "provider"=>"twitter"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `veio' for #<Class:0x007f2c7ac55f78>):
+  app/controllers/sessions_controller.rb:5:in `create'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (16.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.5ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:03:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:03:44 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=lNK78wAAAAAAi0_bAAABUTaWsdc&oauth_verifier=CURszPUNqaSeUejgkWWvwVRevpsLYMrb" for 127.0.0.1 at 2015-11-23 21:03:46 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"lNK78wAAAAAAi0_bAAABUTaWsdc", "oauth_verifier"=>"CURszPUNqaSeUejgkWWvwVRevpsLYMrb", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`uid`, `provider`, `created_at`, `updated_at`) VALUES ('96804099', 'twitter', '2015-11-23 23:03:48', '2015-11-23 23:03:48')
+  [1m[36m (63.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `name` = 'T.C. Santana ', `location` = 'Rio de Janeiro ', `image_url` = 'http://pbs.twimg.com/profile_images/1392189558/mikami_teru___the_fourth_kira_by_dilandau93-d30we01_normal.jpg', `url` = 'https://twitter.com/t_csantana', `updated_at` = '2015-11-23 23:03:48' WHERE `users`.`id` = 1[0m
+  [1m[35m (30.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 119ms (ActiveRecord: 95.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:03:48 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 232ms (Views: 230.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-11-23 21:08:28 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9lT2uStFFxIj7tiqayAKLb5wqLGsjIfsRsdY6BjfggHs2KBCMLKfFdVxGy7ao/oTIOjRI32MW8n/jNstgs8Lyg=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:08:28 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.6ms)
+  Rendered pages/index.html.erb within layouts/application (5.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:08:31 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:08:32 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=tWfNrwAAAAAAi0_bAAABUTabF-I&oauth_verifier=zJeIvNqPngYaWL2jelvJG4sUCRWEqHRD" for 127.0.0.1 at 2015-11-23 21:08:34 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"tWfNrwAAAAAAi0_bAAABUTabF-I", "oauth_verifier"=>"zJeIvNqPngYaWL2jelvJG4sUCRWEqHRD", "provider"=>"twitter"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:08:37 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:03 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 2343ms (Views: 2334.1ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-11-23 21:16:11 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dXlgS6J0D9iiAYJw/S8s0Uho090frEDz/bINmaDpTxNv9TawuYOH31SeQfRMrNzv1vCqT86snNZE+Y5cOvnG2A=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:11 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:15 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.2ms)
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 52.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:16 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 48ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:17 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 52ms (Views: 51.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:16:20 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:16:21 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=2ImsNAAAAAAAi0_bAAABUTaiQFE&oauth_verifier=59Z6Y2y7mxo0PSMegPGutaSaAlNe5RWC" for 127.0.0.1 at 2015-11-23 21:16:23 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"2ImsNAAAAAAAi0_bAAABUTaiQFE", "oauth_verifier"=>"59Z6Y2y7mxo0PSMegPGutaSaAlNe5RWC", "provider"=>"twitter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:26 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-11-23 21:16:28 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YTgm1EkAg8qgUAGm9VEADmTgND6INIw34s60YpGz2ct7tHAvUvcLzVbPwiJE0vAw+nhNrFk0UBJbhTenC6NQAA=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:16:28 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:31:03 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.4ms)
+  Rendered pages/index.html.erb within layouts/application (10.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 266ms (Views: 254.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:31:05 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:35:23 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (13.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 3241ms (Views: 3233.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:35:29 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:35:30 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=T5WJlAAAAAAAi0_bAAABUTaz29E&oauth_verifier=b3cwmrRN8BnGTQb7k0VePl0UOh7Cnso6" for 127.0.0.1 at 2015-11-23 21:35:37 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"T5WJlAAAAAAAi0_bAAABUTaz29E", "oauth_verifier"=>"b3cwmrRN8BnGTQb7k0VePl0UOh7Cnso6", "provider"=>"twitter"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:35:40 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:35:44 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-11-23 21:35:46 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Sa4xQbkTT6GGpphq/Snw7lOSjbGcdIuAinrNNTKiqfNTIme6ouTHpnA5W+5MqgDQzQr0I010V6UzMU7wqLIgOA=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:35:46 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.1ms)
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 51ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:36:26 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 1694ms (Views: 1694.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:36:30 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:36:31 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=-3D1ZAAAAAAAi0_bAAABUTa0uK8&oauth_verifier=WAQjmXKMWwvsOMVdXcjNx5DCOUYtJ1Zj" for 127.0.0.1 at 2015-11-23 21:36:34 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"-3D1ZAAAAAAAi0_bAAABUTa0uK8", "oauth_verifier"=>"WAQjmXKMWwvsOMVdXcjNx5DCOUYtJ1Zj", "provider"=>"twitter"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:36:36 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2015-11-23 21:36:41 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Mr4L7WqIfdcJf6xg8VHbLhYKc5oFU5LX99NMAbfrgsQoMl0WcX/10P/gb+RA0isQiJIKCNRTTvJOmM/ELfsLDw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:36:41 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:57:57 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-23 21:57:58 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=_WPTTAAAAAAAi0_bAAABUTbIXH0&oauth_verifier=ukXj0NrQ2piSudKaZ78xEPOLjLhTAfwp" for 127.0.0.1 at 2015-11-23 21:58:01 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"_WPTTAAAAAAAi0_bAAABUTbIXH0", "oauth_verifier"=>"ukXj0NrQ2piSudKaZ78xEPOLjLhTAfwp", "provider"=>"twitter"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-23 21:58:08 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 241ms (Views: 239.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:48:43 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.4ms)
+  Rendered pages/index.html.erb within layouts/application (26.6ms)
+Completed 500 Internal Server Error in 597ms (ActiveRecord: 0.8ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>SocialFreak</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4302148409635810995_22568740'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (27.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (68.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:49:32 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>SocialFreak</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4302148409635810995_22568740'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:49:41 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>SocialFreak</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___4302148409635810995_22568740'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:49:51 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.1ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 274ms (Views: 274.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-29 19:49:52 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:52:07 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 1385ms (ActiveRecord: 0.7ms)
+
+ActionView::Template::Error (Invalid CSS after "...trap-sprockets"": expected selector or at-rule, was "@import "bootst..."):
+    2: <html>
+    3: <head>
+    4:   <title>SocialFreak</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/application.css.scss:2
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___320559890433496970_28569580'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:53:47 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 4326ms (Views: 4325.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-29 19:55:22 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-29 19:55:27 -0200
+
+
+Started GET "/auth/twitter/callback?denied=OOhmngAAAAAAi0_bAAABUVU-ZW0" for 127.0.0.1 at 2015-11-29 19:56:02 -0200
+
+OAuth::Unauthorized (401 Authorization Required):
+  oauth (0.4.7) lib/oauth/consumer.rb:216:in `token_request'
+  oauth (0.4.7) lib/oauth/tokens/request_token.rb:18:in `get_access_token'
+  omniauth-oauth (1.1.0) lib/omniauth/strategies/oauth.rb:56:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  omniauth (1.2.2) lib/omniauth/builder.rb:59:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/tassyo1/.rvm/rubies/ruby-2.1.7/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (15.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.6ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/tassyo1/.rvm/gems/ruby-2.1.7/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 19:58:10 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 58ms (Views: 56.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:00:07 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.2ms)
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:00:08 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:00:12 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 60ms (Views: 59.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:02:39 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.5ms)
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 54ms (Views: 53.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:03:01 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (1.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-11-29 20:03:04 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:05:15 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.4ms)
+  Rendered pages/index.html.erb within layouts/application (12.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 3621ms (Views: 3612.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:05:26 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.2ms)
+  Rendered pages/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 57ms (Views: 55.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:05:27 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:05:36 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 60ms (Views: 59.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:07:13 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 123ms (Views: 122.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-ab177e5340be70fb3d618925a3cef3ec7f3f525222632f38707ff21a7e0084b7.css?body=1" for 127.0.0.1 at 2015-11-29 20:07:14 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-29 20:08:11 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2015-11-29 20:08:15 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=hG1DbwAAAAAAi0_bAAABUVVKHo0&oauth_verifier=V2b5Jx7VHlJzSnYF7hiaEJt6lxfQvZDs" for 127.0.0.1 at 2015-11-29 20:08:37 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"hG1DbwAAAAAAi0_bAAABUVVKHo0", "oauth_verifier"=>"V2b5Jx7VHlJzSnYF7hiaEJt6lxfQvZDs", "provider"=>"twitter"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 96ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-11-29 20:08:46 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 84ms (Views: 83.0ms | ActiveRecord: 0.3ms)
+  [1m[36m (98.0ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (186.9ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations`  ON `schema_migrations` (`version`) 
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Migrating to CreateUsers (20151123201008)
+  [1m[35m (53.1ms)[0m  CREATE TABLE `users` (`id` int(11) auto_increment PRIMARY KEY, `provider` varchar(255) NOT NULL, `uid` varchar(255) NOT NULL, `name` varchar(255), `location` varchar(255), `image_url` varchar(255), `url` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151123201008')
+  [1m[36m (26.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddIndexUser (20151123204704)
+  [1m[35m (146.7ms)[0m  CREATE  INDEX `index_users_on_provider`  ON `users` (`provider`) 
+  [1m[36m (146.9ms)[0m  [1mCREATE  INDEX `index_users_on_uid`  ON `users` (`uid`) [0m
+  [1m[35m (146.6ms)[0m  CREATE UNIQUE INDEX `index_users_on_provider_and_uid`  ON `users` (`provider`, `uid`) 
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20151123204704')
+  [1m[36m (30.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+  [1m[36m (0.4ms)[0m  [1mSELECT fk.referenced_table_name as 'to_table'
+      ,fk.referenced_column_name as 'primary_key'
+      ,fk.column_name as 'column'
+      ,fk.constraint_name as 'name'
+FROM information_schema.key_column_usage fk
+WHERE fk.referenced_column_name is not null
+  AND fk.table_schema = 'social_freak_development'
+  AND fk.table_name = 'users'
+[0m
+  [1m[35m (0.2ms)[0m  SHOW CREATE TABLE `users`
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 19:16:46 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.3ms)
+  Rendered pages/index.html.erb within layouts/application (6.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 3896ms (Views: 3888.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-4b601abfdc5031279b8d24cfa26c9722ed6c59d5f2358256a3bd7e1c7cfd857b.css?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2016-02-09 19:16:50 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 19:16:52 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 19:16:54 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 20:10:32 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 35ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 20:10:33 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 20:10:34 -0200
