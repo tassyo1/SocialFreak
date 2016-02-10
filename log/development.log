@@ -1953,3 +1953,129 @@ Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 20:10:33 -0200
 
 
 Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 20:10:34 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:35:02 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.2ms)
+  Rendered pages/index.html.erb within layouts/application (7.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 157ms (Views: 150.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-02-09 22:35:04 -0200
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2016-02-09 22:35:04 -0200
+
+
+Started GET "/auth/facebook/callback?code=AQA0ic6IhLtjiH05RIVLFQx1eMYdtKMey9-H_CWVSCtQuneThkZgVz0quZiFHf_85KImk52gZzpDEjQnTI5Rjum40ZBkNlwtGivtfwOcme3AKec3zT7e0eYTy2Hhq1mwBn7-jMtPg2Dr_gdjoACst_XhWz9DVmqCdewdzNMLNCOkGl7LgCTyDx4JumI-HgiLrEpb-iC8ERiir_rwY79D31l84Agt2wXeOe6_FvEBntitIKXTaMSxj1wsLQkncasprGkfHT_7UFVxpaswJ_-1rmDluUfH29Tjov8TcHfA06iyoTh-GU7JquKwT3I6MQLx8w6-Z6iVZXQafEJI24VQLY4Q&state=8bf5af505ced5f89f49f168af5c589c90f5cd189c78a2d3d" for 127.0.0.1 at 2016-02-09 22:35:23 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"AQA0ic6IhLtjiH05RIVLFQx1eMYdtKMey9-H_CWVSCtQuneThkZgVz0quZiFHf_85KImk52gZzpDEjQnTI5Rjum40ZBkNlwtGivtfwOcme3AKec3zT7e0eYTy2Hhq1mwBn7-jMtPg2Dr_gdjoACst_XhWz9DVmqCdewdzNMLNCOkGl7LgCTyDx4JumI-HgiLrEpb-iC8ERiir_rwY79D31l84Agt2wXeOe6_FvEBntitIKXTaMSxj1wsLQkncasprGkfHT_7UFVxpaswJ_-1rmDluUfH29Tjov8TcHfA06iyoTh-GU7JquKwT3I6MQLx8w6-Z6iVZXQafEJI24VQLY4Q", "state"=>"8bf5af505ced5f89f49f168af5c589c90f5cd189c78a2d3d", "provider"=>"facebook"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '957662734322407' AND `users`.`provider` = 'facebook' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`uid`, `provider`, `created_at`, `updated_at`) VALUES ('957662734322407', 'facebook', '2016-02-10 00:35:24', '2016-02-10 00:35:24')
+  [1m[36m (44.5ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `name` = 'Tássyo Santana', `image_url` = 'http://graph.facebook.com/957662734322407/picture', `url` = 'https://www.facebook.com/app_scoped_user_id/957662734322407/', `updated_at` = '2016-02-10 00:35:24' WHERE `users`.`id` = 1[0m
+  [1m[35m (32.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 100ms (ActiveRecord: 79.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:35:24 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:36:33 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:36:35 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:36:36 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-02-09 22:37:25 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kNOkqPziQiyaZBTpBw6J/h4Js3nQNsk/DheJioKW9ypzmg4LIh6bh3YI3NUlJmQsWTB7mOyVyRVhZcFJO+opcg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:37:25 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 59ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 22:37:28 -0200
+
+
+Started GET "/auth/twitter" for 127.0.0.1 at 2016-02-09 22:37:29 -0200
+
+
+Started GET "/auth/twitter/callback?oauth_token=mBZ75AAAAAAAi0_bAAABUsick4M&oauth_verifier=cih4wGdZFcuOrNYBCMUCCBXSGECAMUpB" for 127.0.0.1 at 2016-02-09 22:37:44 -0200
+Processing by SessionsController#create as HTML
+  Parameters: {"oauth_token"=>"mBZ75AAAAAAAi0_bAAABUsick4M", "oauth_verifier"=>"cih4wGdZFcuOrNYBCMUCCBXSGECAMUpB", "provider"=>"twitter"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`uid` = '96804099' AND `users`.`provider` = 'twitter' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`uid`, `provider`, `created_at`, `updated_at`) VALUES ('96804099', 'twitter', '2016-02-10 00:37:46', '2016-02-10 00:37:46')
+  [1m[36m (47.6ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `name` = 'T.C. Santana ', `location` = 'Rio de Janeiro ', `image_url` = 'http://pbs.twimg.com/profile_images/1392189558/mikami_teru___the_fourth_kira_by_dilandau93-d30we01_normal.jpg', `url` = 'https://twitter.com/t_csantana', `updated_at` = '2016-02-10 00:37:46' WHERE `users`.`id` = 2[0m
+  [1m[35m (33.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 88ms (ActiveRecord: 82.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:37:46 -0200
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  Rendered pages/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:37:53 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-02-09 22:37:54 -0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NJMsFOga2aIrIuIkCsbxUQwgsyZp4K7M3nmBUCpn+erX2oa3NuYACcdOKhgo7hyDSxl7x1VDruaxC8mTkxsnsg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-02-09 22:37:54 -0200
+Processing by PagesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1
+  Rendered pages/_welcome.html.erb (0.0ms)
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` IS NULL LIMIT 1[0m
+Completed 200 OK in 72ms (Views: 70.8ms | ActiveRecord: 0.4ms)
